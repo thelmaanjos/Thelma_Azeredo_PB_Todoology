@@ -42,25 +42,26 @@
 <div
 	class="d-flex flex-column flex-shrink-0 p-3 py-5 text-white bg-dark"
 	style="width: 280px;">
-	<a href="/"
+	<a href="/home"
 		class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
 		<span class="fs-4">Seu Todoology</span>
 	</a>
 	<hr>
 	<ul class="nav nav-pills flex-column">
-		<li class="nav-item"><a href="/home" class="nav-link active"
-			aria-current="page"> <svg class="bi me-2" width="16" height="16">
+		<!-- class="nav-link active" -->
+		<li><a href="/home" class="nav-link text-white"> <svg
+					class="bi me-2" width="16" height="16">
 							<use xlink:href="#home" /></svg> Home
 		</a></li>
 		<li><a href="/projeto/lista" class="nav-link text-white"> <svg
 					class="bi me-2" width="16" height="16">
-							<use xlink:href="#speedometer2" /></svg> Seus projetos
+							<use xlink:href="#grid" /></svg> Seus projetos
 		</a></li>
 		<li><a href="/atividade/lista" class="nav-link text-white"> <svg
 					class="bi me-2" width="16" height="16">
 							<use xlink:href="#table" /></svg> Suas atividades
 		</a></li>
-		<li><a href="/tarefas/cadastro" class="nav-link text-white"> <svg
+		<li><a href="/tarefa/lista" class="nav-link text-white"> <svg
 					class="bi me-2" width="16" height="16">
 							<use xlink:href="#geo-fill" /></svg> Lista de tarefas
 		</a></li>
@@ -73,20 +74,23 @@
 		</a></li>
 		<li><a href="/atividade/lista" class="nav-link text-white"> <svg
 					class="bi me-2" width="16" height="16">
-							<use xlink:href="#people-circle" /></svg> Nova atividade
+							<use xlink:href="#table" /></svg> Nova atividade
 		</a></li>
-		<li><a href="/desenvolvimento/lista" class="nav-link text-white"> <svg
-					class="bi me-2" width="16" height="16">
-							<use xlink:href="#people-circle" /></svg> Nova tarefa em
-				desenvolvimento
+		<li><a href="/desenvolvimento/lista" class="nav-link text-white">
+				<svg class="bi me-2" width="16" height="16">
+							<use xlink:href="#geo-fill" /></svg> Nova tarefa em desenvolvimento
 		</a></li>
 		<li><a href="/analise/lista" class="nav-link text-white"> <svg
 					class="bi me-2" width="16" height="16">
-							<use xlink:href="#people-circle" /></svg> Nova tarefa em análise
+							<use xlink:href="#geo-fill" /></svg> Nova tarefa em análise
 		</a></li>
-		<li><a href="/implantacao/lista" class="nav-link text-white"> <svg
+		<li><a href="/implantacao/lista" class="nav-link text-white">
+				<svg class="bi me-2" width="16" height="16">
+							<use xlink:href="#geo-fill" /></svg> Nova tarefa em implantação
+		</a></li>
+		<li><a href="/usuario/lista" class="nav-link text-white"> <svg
 					class="bi me-2" width="16" height="16">
-							<use xlink:href="#people-circle" /></svg> Nova tarefa em implantação
+							<use xlink:href="#collection" /></svg> Lista de usuários
 		</a></li>
 	</ul>
 	<hr>

@@ -21,7 +21,7 @@ public class UsuarioService
 
 	public List<Usuario> obterLista(Usuario usuario) 
 	{
-		return (List<Usuario>) usuarioRepository.obterLista(usuario.getId(),Sort.by(Sort.Direction.ASC, "titulo"));
+		return (List<Usuario>) usuarioRepository.findAll(Sort.by(Sort.Direction.ASC, "nome"));
 	}
 
 	public void excluir(Integer id) 

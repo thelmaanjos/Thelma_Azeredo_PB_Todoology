@@ -11,7 +11,7 @@
 <meta name="author"
 	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.83.1">
-<title>Projeto</title>
+<title>Usuários cadastrados</title>
 <link rel="canonical"
 	href="https://getbootstrap.com/docs/5.0/examples/checkout/">
 <!-- Bootstrap core CSS -->
@@ -50,42 +50,32 @@
 		<c:import url="/WEB-INF/jsp/sidemenu.jsp" />
 
 		<div class="container px-4 py-5" id="hanging-icons">
-			<h1 class="pb-2 text-center">Suas Tarefas</h1>
-			<div class="row g-4 py-5 row-cols-1">
-				<div class="col d-flex align-items-start">
-					<div class="row g-3">
-						<c:if test="${not empty tarefas}">
-							<table class="table table-striped">
-								<thead class="table-dark">
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">titulo</th>
-										<th scope="col">Autor</th>
-										<th scope="col">Início</th>
-										<th scope="col">Término</th>
-										<th scope="col">Ações</th>
-									</tr>
-								</thead>
-								<tbody>
-									<c:forEach var="t" items="${tarefas}">
-										<tr>
-											<td>${t.id}</td>
-											<td>${t.titulo}</td>
-											<td>${t.autor}</td>
-											<td>${t.inicio}</td>
-											<td>${t.termino}</td>
-											<td><a href="/tarefa/${t.id}/excluir"
-												class="text-decoration-none">excluir</a></td>
-										</tr>
-									</c:forEach>
-								</tbody>
-							</table>
-						</c:if>
-						<c:if test="${empty tarefas}">
-							<h3>Não existem tarefas criadas.</h3>
-						</c:if>
-					</div>
-				</div>
+			<h1 class="pb-2 text-center">Lista de usuários</h1>
+			<div class="py-3 p-5">
+				<c:if test="${not empty usuarios}">
+					<table class="table table-striped">
+						<thead class="table-dark">
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">nome</th>
+								<th scope="col">email</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<c:forEach var="u" items="${usuarios}">
+								<tr>
+									<td>${u.id}</td>
+									<td>${u.nome}</td>
+									<td>${u.email}</td>
+								</tr>
+							</c:forEach>
+						</tbody>
+					</table>
+				</c:if>
+				<c:if test="${empty usuarios}">
+					<h3 class="text-center">Não existem usuários cadastrados.</h3>
+				</c:if>
 			</div>
 		</div>
 	</div>

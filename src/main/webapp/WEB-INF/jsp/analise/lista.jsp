@@ -50,13 +50,12 @@
 		<c:import url="/WEB-INF/jsp/sidemenu.jsp" />
 
 		<div class="container px-4 py-5" id="hanging-icons">
-			<h1 class="pb-2 text-center">Tarefa - análise</h1>
+			<h1 class="pb-2 text-center">Lista de tarefas em análise</h1>
 			<div class="row g-4 py-5 row-cols-1">
 
 				<c:if test="${not empty analises}">
 					<a href="/analise" class="w-80 btn btn-dark btn-md my-5"
 						type="submit">Criar nova tarefa</a>
-					<h3 class="text-center pb-5">Tarefas em análise criadas:</h3>
 					<table class="table table-striped">
 						<thead class="table-dark">
 							<tr>

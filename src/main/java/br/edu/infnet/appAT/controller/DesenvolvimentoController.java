@@ -21,7 +21,7 @@ public class DesenvolvimentoController
 	@GetMapping(value = "/desenvolvimento")
 	public String telaCadastro()
 	{
-		return "/desenvolvimento/cadastro";
+		return "desenvolvimento/cadastro";
 	}
 	
 	@PostMapping(value = "/desenvolvimento/incluir")

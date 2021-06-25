@@ -49,13 +49,12 @@
 	<div class="side">
 		<c:import url="/WEB-INF/jsp/sidemenu.jsp" />
 		<div class="container px-4 py-5" id="hanging-icons">
-			<h1 class="pb-2 text-center">Lista de Atividades</h1>
+			<h1 class="pb-2 text-center">Lista de atividades</h1>
 			<div class="row g-4 py-5 row-cols-1">
 
 				<c:if test="${not empty atividades}">
 					<a href="/atividade" class="w-80 btn btn-dark btn-md my-5"
 						type="submit">Criar nova atividade</a>
-					<h3 class="text-center pb-5">Atividades criadas:</h3>
 					<table class="table table-striped">
 						<thead class="table-dark">
 							<tr>

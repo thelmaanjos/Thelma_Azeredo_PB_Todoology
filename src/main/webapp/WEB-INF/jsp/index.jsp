@@ -44,15 +44,13 @@
 <body class="bg-light">
 	<div class="side">
 		<c:import url="/WEB-INF/jsp/sidemenu.jsp" />
-
 		<div class="container px-4 py-5" id="hanging-icons">
-			<h2 class="pb-2 border-bottom">Bem vindo(a), ${user.nome}</h2>
-			<a href="/logout" class="w-80 btn btn-dark btn-md my-5" type="submit">Sair</a>
+			<c:import url="/WEB-INF/jsp/navbar.jsp" />
 			<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 				<div class="col d-flex align-items-start">
 					<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
 						<svg class="bi" width="1em" height="1em">
-							<use xlink:href="#toggles2" /></svg>
+							<use xlink:href="#grid" /></svg>
 					</div>
 					<div>
 						<h2>Cadastrar + projetos</h2>
@@ -67,7 +65,7 @@
 				<div class="pb-5 col d-flex align-items-start">
 					<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
 						<svg class="bi" width="1em" height="1em">
-							<use xlink:href="#toggles2" /></svg>
+							<use xlink:href="#table" /></svg>
 					</div>
 					<div>
 						<h2>Cadastrar + atividades</h2>
@@ -82,7 +80,7 @@
 				<div class="pb-5 col d-flex align-items-start">
 					<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
 						<svg class="bi" width="1em" height="1em">
-							<use xlink:href="#toggles2" /></svg>
+							<use xlink:href="#geo-fill" /></svg>
 					</div>
 					<div>
 						<h2>Lista geral de tarefas</h2>
@@ -96,7 +94,7 @@
 				<div class="col d-flex align-items-start">
 					<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
 						<svg class="bi" width="1em" height="1em">
-							<use xlink:href="#toggles2" /></svg>
+							<use xlink:href="#geo-fill" /></svg>
 					</div>
 					<div>
 						<h2>Tarefas em desenvolvimento</h2>
@@ -111,7 +109,7 @@
 				<div class="col d-flex align-items-start">
 					<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
 						<svg class="bi" width="1em" height="1em">
-							<use xlink:href="#toggles2" /></svg>
+							<use xlink:href="#geo-fill" /></svg>
 					</div>
 					<div>
 						<h2>Tarefas em análise</h2>
@@ -126,7 +124,7 @@
 				<div class="col d-flex align-items-start">
 					<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
 						<svg class="bi" width="1em" height="1em">
-							<use xlink:href="#toggles2" /></svg>
+							<use xlink:href="#geo-fill" /></svg>
 					</div>
 					<div>
 						<h2>Tarefas em implantação</h2>
@@ -141,7 +139,7 @@
 				<div class="col d-flex align-items-start">
 					<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
 						<svg class="bi" width="1em" height="1em">
-							<use xlink:href="#toggles2" /></svg>
+							<use xlink:href="#collection" /></svg>
 					</div>
 					<div>
 						<h2>Usuários</h2>
@@ -149,7 +147,7 @@
 							heading. We'll add onto it with another sentence and probably
 							just keep going until we run out of words.</p>
 						<p>${usuarioQtde} usuarios</p>
-						<a href="/usuario" class="btn btn-primary"> Ver usuários</a>
+						<a href="/usuario/lista" class="btn btn-primary"> Ver usuários</a>
 					</div>
 				</div>
 			</div>

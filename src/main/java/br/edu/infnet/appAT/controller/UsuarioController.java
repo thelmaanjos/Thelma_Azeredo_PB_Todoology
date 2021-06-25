@@ -21,6 +21,8 @@ import br.edu.infnet.appAT.model.service.UsuarioService;
 public class UsuarioController {
 	@Autowired
 	private UsuarioService usuarioService;
+	@Autowired
+	private AppController appController;
 
 	@RequestMapping("/cadastro")
 	public String cadastro(Model model) 
@@ -66,7 +68,7 @@ public class UsuarioController {
 	@GetMapping(value = "/usuario/lista")
 	public String obterLista(Model model, @SessionAttribute("user") Usuario usuario) 
 	{
-		model.addAttribute("usuariosCadastrados", usuarioService.obterLista(usuario));
+		model.addAttribute("usuarios", usuarioService.obterLista(usuario));
 		return "usuario/lista";
 	}
 

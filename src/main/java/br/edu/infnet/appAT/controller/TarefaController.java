@@ -19,7 +19,7 @@ public class TarefaController
 	@GetMapping(value = "/tarefa")
 	public String telaCadastro()
 	{
-		return "redirect:/tarefa/lista";
+		return "tarefa/cadastro";
 	}
 	
 	@GetMapping(value = "/tarefa/{id}/excluir")
@@ -33,6 +33,6 @@ public class TarefaController
 	public String obterLista(Model model, @SessionAttribute("user") Usuario usuario)
 	{
 		model.addAttribute("tarefas", tarefaService.obterLista(usuario));
-		return "tarefa/cadastro";
+		return "tarefa/lista";
 	}
 }

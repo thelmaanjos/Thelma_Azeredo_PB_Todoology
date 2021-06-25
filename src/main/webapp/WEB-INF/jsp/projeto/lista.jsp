@@ -58,7 +58,6 @@
 				<c:if test="${not empty projetos}">
 					<a href="/projeto" class="w-80 btn btn-dark btn-md my-5"
 						type="submit">Criar novo projeto</a>
-					<h3 class="text-center pb-5">Projetos criados:</h3>
 					<table class="table table-striped">
 						<thead class="table-dark">
 							<tr>
