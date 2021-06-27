@@ -28,24 +28,13 @@ public class Usuario
 	private List<Atividade> atividades;
 	
 	public Usuario()
-	{
-		
+	{	
 	}
 	
 	public Usuario(String nome, String email) 
 	{
 		this.nome = nome;
 		this.email = email;
-	}
-	
-	@Override
-	public String toString() 
-	{
-		return String.format("%d - %s - %s", 
-					this.getId(),
-					this.getNome(),
-					this.getEmail()
-				);
 	}
 
 	public Integer getId() 
@@ -102,5 +91,10 @@ public class Usuario
 	{
 		this.atividades = atividades;
 	}
-
+	
+	@Override
+	public String toString() 
+	{
+		return  getId() + getNome() + getEmail();
+	}
 }
